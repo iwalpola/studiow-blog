@@ -1,0 +1,14 @@
+[OpenCV](http://https://github.com/opencv/opencv) is a large and well developed, cross platform machine vision library. Today we will take a look at how to cross compile OpenCV for 32 bit the ever growing ARM platform.
+
+The board tested was a NanoPi M1, which is based on the Allwinner H3 SoC, and this method should work for any armbian installation on an armhf SoC. (If you are not using a hard-float installation, you must install different cross compiling toolchain - see the "Toolchain" section below.)
+
+Prerequisites:
+* Ubuntu Xenial 16.04 on x64_86 host (or [virtualbox](http://www.virtualbox.org/) of it on Windows)
+* An instance of Armbian running
+* SSH access to the instance
+
+I owe partial credits and many saved hours to:
+
+[Hertaville how to qt](http://hertaville.com/cross-compiling-qt4-app.html)
+[Qt  Raspberry pi beginners guide](https://wiki.qt.io/RaspberryPi_Beginners_Guide)
+[Nadeem openCV guide](http://hassannadeem.com/blog/2015/04/29/cross-compile-opencv-with-ffmpeg-ar-drone-arm/)
