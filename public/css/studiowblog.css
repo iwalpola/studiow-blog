@@ -1,5 +1,12 @@
 header {
    background-color: #838C95;
+   height: 54px;
+   width: 100%;
+   z-index: 99999;
+   /*background: url(../images/k-opacity-70.png);*/
+   position: fixed;
+   top: 0;
+   left: 0;
 }
 
 header .row:before, .row:after {
