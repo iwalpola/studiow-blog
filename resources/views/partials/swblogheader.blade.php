@@ -11,10 +11,10 @@
             <nav id="nav-wrap">
 
                <ul id="nav" class="nav">
-                   <li><a href="#intro">Home</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#about">About Us</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                   <li><a href="/#intro">Home</a></li>
+                  <li><a href="/#portfolio">Portfolio</a></li>
+                  <li><a href="/#about">About Us</a></li>
+                  <li><a href="/#contact">Contact</a></li>
                   <li><a href="blog">BLOG</a></li>
                </ul>
 
