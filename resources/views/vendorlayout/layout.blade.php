@@ -5,7 +5,7 @@
         @yield('title')
         <meta name="description" content="{{ $meta_description }}">
         @include('canvas::frontend.partials.css')
-        @include('partials.studiow.css')
+        @include('partials.css')
         @include('canvas::frontend.partials.user-generated-css')
     </head>
     <body>
