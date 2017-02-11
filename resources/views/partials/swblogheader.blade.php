@@ -5,7 +5,7 @@
          <div class="col full">
 
             <div class="logo">
-               <a href="#"><img alt="" src="images/logo.png"></a>
+               <a href="#"><img alt="" src="/images/logo.png"></a>
             </div>
 
             <nav id="nav-wrap">
