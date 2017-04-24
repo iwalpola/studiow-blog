@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('studiowhome');
 })->name('canvas.home');
+
+Route::post('newmail', ['uses' => 'MailController@store']);

@@ -34,7 +34,6 @@
 
 <body data-spy="scroll" data-target="#nav-wrap">
 
-
    <!-- Header
    ================================================== -->
    <header class="mobile">
@@ -488,6 +487,7 @@
                   <div>
 						   <label for="contactName">Name <span class="required">*</span></label>
 						   <input name="contactName" type="text" id="contactName" size="35" value="" />
+                     <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
                   </div>
 
                   <div>
@@ -538,8 +538,8 @@
             </p>
 
             <p>
-            Phone: +917086880253 <br />
-            Email: info [@] studiowalpola.com
+            Phone: +94766623565 <br />
+            Email: iwalpola [@] studiow.cf
             </p><br />
 
          </aside>

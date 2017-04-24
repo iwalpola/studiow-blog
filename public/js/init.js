@@ -23,23 +23,24 @@
 
       $('#image-loader').fadeIn();
 
-      var contactName = $('#contactForm #contactName').val();
-      var contactEmail = $('#contactForm #contactEmail').val();
-      var contactSubject = $('#contactForm #contactSubject').val();
-      var contactMessage = $('#contactForm #contactMessage').val();
-
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
-               '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
+      var formData = {
+         contactName: $('#contactForm #contactName').val(),
+         contactEmail: $('#contactForm #contactEmail').val(),
+         contactSubject: $('#contactForm #contactSubject').val(),
+         contactMessage: $('#contactForm #contactMessage').val(),
+         _token: $('#contactForm #token').val(),
+      }
 
       $.ajax({
 
 	      type: "POST",
-	      url: "inc/sendEmail.php",
-	      data: data,
-	      success: function(msg) {
+	      url: "newmail",
+	      data: formData,
+         dataType: 'json',
+	      success: function(data) {
 
             // Message was sent
-            if (msg == 'OK') {
+            if (data.msg == 'OK') {
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
