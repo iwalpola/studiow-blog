@@ -1,6 +1,7 @@
 /vendor
 /node_modules
 /public/storage
+/config/mail.php
 /public/vendor
 /storage/*.lock
 /storage/*.index
